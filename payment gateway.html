@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        form{word-wrap: inherit; border: 2px solid lightgray; border-radius: 20px;padding: 20px ;}
+  body {background-color:mediumaquamarine;
+  padding: 20px; } 
+  h1{ text-align: center; font-size: xx-large; }
+  h2{text-align: center; font-size: xx-large;}
+  form{ margin: 20px;}
+  
+input[type=submit] {
+  width: 100%;
+  background-color: #444e44;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:grey;
+}
+.address{margin-top: 0px; margin-bottom: 0px; height: 16px;}
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment gateway</title>
+  
+</head>
+<body>
+    
+    <form action="mailto:tanishqug@gmail.com" method="post" enctype="text/plain">
+        <h1>Payment Form</h1><hr>
+       <section> <h2>User info</h2>
+        <h3>Name</h3>
+        <p>First Name : <input type="text" name=first required placeholder="deo"></p>
+        <p>Last Name :  <input type="text" name=last name  required placeholder="json"></p>
+        <b><legend>Gender</legend></b>
+        
+        <p>Male  <input type="radio" name="Gender" id="">
+           Female  <input type="radio" name="Gender" id="">
+           Other <input type="radio" name="Gender" id=""></p>
+           <br>
+        <b class="address"  cols="56" rows="10" margin:="" 0px;="" width:="" 422px;="" height:="" 122px;="" ><legend>Address</legend></b>
+        <p><textarea name="address"id="" cols="26" rows="3"margin: 0px; width: 657px; height: 254px; >
+        </textarea> </p>
+        <b><legend>Pincode <legend></legend> </b>
+        <p> <input type="number" name="Pincode" id="" placeholder="123-456"></p>
+        <b> <legend>Email</legend></b>
+        <p> <input type="email" name="email" id="" required  placeholder="leojson@example.com"></i></p> 
+        
+        <hr></section>
+        <h2>Payment info</h2>
+        <b><legend>Bank Name</legend></b>
+        <p><input type="text" name="bank name" id="" required></p>
+        <b><legend>Card Type</legend></b>
+        
+        <p><select name="card type" id="" required>
+            <option value="">--selectscard type--</option>
+            <option value="visa" > visa</option>
+            <option value="rupay">Rupay</option>           
+            </select></p>
+        <b><legend>Card Number</legend></b>   
+        <p><input type="number" name="card number" id="" required
+            placeholder="1111 2222 3333 4444"></p>
+        <b><legend>Card's Expiration Date</legend></b>
+        <p>
+            <input type="date" name="Card's Expiration Date" id="" required>
+        </p>
+        <b><legend>CVV</legend></b>
+         <p><input type="password" name="CVV" id="" required qplaceholder="123"></p>
+         <input type="submit" value="Pay now">
+    </form>
+    <script>
+     var Alretmassage = "Please enter all your bank details carefully";
+     alert(Alretmassage);
+       
+    </script>
+</body>
+</html>
